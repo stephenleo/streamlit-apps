@@ -25,3 +25,8 @@ predictions = response.json()
 # Add a submit button
 if st.button("Submit"): 
     st.write(f"Prediction: {predictions['predictions'][0]}")
+
+
+with open('about.md', 'r') as f:
+    content = f.read()
+st.markdown(content)
