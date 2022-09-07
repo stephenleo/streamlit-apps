@@ -1,7 +1,13 @@
+### Welcome to my Streamlit demo apps website! 👋
+
+Streamlit is an open-source app framework built specifically for
+Machine Learning and Data Science projects.
+
+**👈 Select a demo from the sidebar** to see some examples
+of my work deployed on Streamlit cloud!
+
 ---
 ### About Me
-This app is a minimal showcase for using Streamlit with a remotely deployed ML model.
-
 If you like this work, please consider 🌟 this repo: [streamlit-apps](https://github.com/stephenleo/streamlit-apps)
 
 You can also connect with me below:

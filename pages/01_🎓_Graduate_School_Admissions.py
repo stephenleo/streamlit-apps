@@ -5,6 +5,13 @@ import json
 # Title of the page
 st.title("🎓 Graduate School Admissions")
 
+with open('descriptions/01_🎓_Graduate_School_Admissions.md', 'r') as f:
+    content = f.read()
+
+with st.sidebar:
+    st.header("🎓 Graduate School Admissions")
+    st.markdown(content)
+
 # Get user inputs
 gre = st.number_input("📚 GRE Score:", min_value=0, max_value=800, help="GRE score in the range 0 to 800") # int max value to allow only int inputs
 gpa = st.number_input("✍️ GPA Score:", min_value=0.0, max_value=5.0, help="GPA in the range 0 to 5") # float max value to allow decimal inputs
@@ -25,8 +32,3 @@ predictions = response.json()
 # Add a submit button
 if st.button("Submit"): 
     st.write(f"Prediction: {predictions['predictions'][0]}")
-
-
-with open('about.md', 'r') as f:
-    content = f.read()
-st.markdown(content)
