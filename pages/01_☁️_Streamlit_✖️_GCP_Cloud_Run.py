@@ -2,10 +2,15 @@ import streamlit as st
 import requests
 import json
 
+st.set_page_config(
+    page_title="Streamlit X GCP Cloud Run",
+    page_icon="☁️",
+)
+
 # Title of the page
 st.title("🎓 Graduate School Admissions")
 
-with open('descriptions/01_🎓_Graduate_School_Admissions.md', 'r') as f:
+with open('descriptions/01_☁️_Streamlit_✖️_GCP_Cloud_Run.md', 'r') as f:
     content = f.read()
 
 with st.sidebar:
