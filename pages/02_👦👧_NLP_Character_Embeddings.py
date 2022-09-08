@@ -12,7 +12,7 @@ st.set_page_config(
 st.title("👦👧 Boy or Girl?")
 st.header("Check if your names are Boy's names or Girl's names")
 
-with open("descriptions/02_👦👧_Character_Embeddings.md", "r") as f:
+with open("descriptions/02_👦👧_NLP_Character_Embeddings.md", "r") as f:
     content = f.read()
 
 with st.sidebar:
