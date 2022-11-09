@@ -1,4 +1,4 @@
-🌟 View code on [Github](https://github.com/stephenleo/streamlit-apps/blob/main/pages/01_%F0%9F%8E%93_Graduate_School_Admissions.py)
+🌟 View code on [Github](https://github.com/stephenleo/streamlit-apps/blob/main/pages/02_👦👧_NLP_Character_Embeddings.py)
 
 ✍️ Read the blog post on [Medium](https://towardsdatascience.com/boy-or-girl-a-machine-learning-web-app-to-detect-gender-from-name-16dc0331716c?sk=16897adf79bfe50ec7cf61ad3c1a0f37)
 
