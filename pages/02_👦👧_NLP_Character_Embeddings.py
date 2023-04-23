@@ -28,11 +28,16 @@ names = st.text_input(
 if st.button("Submit"):
     # Code to post the user inputs to the API and get the predictions
     # Paste the URL to your GCP Cloud Run API here!
-    api_url = "https://boyorgirl-a4rmk57awq-uw.a.run.app"
-    api_route = "/predict"
+    api_url = "https://name-gender1.p.rapidapi.com/predict"
+
+    headers = {
+        "content-type": "application/json",
+        "X-RapidAPI-Key": st.secrets["RAPID_API_KEY"],
+        "X-RapidAPI-Host": "name-gender1.p.rapidapi.com",
+    }
 
     with st.spinner("🥁 Drumroll..."):
-        response = requests.post(f"{api_url}{api_route}", json=[names])
+        response = requests.post(api_url, json=[names], headers=headers)
 
     predictions_df = pd.DataFrame(response.json()["response"])
     predictions_df.columns = ["Name", "Boy or Girl?", "Probability"]
