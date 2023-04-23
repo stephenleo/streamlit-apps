@@ -1,7 +1,7 @@
-import streamlit as st
-import requests
 import pandas as pd
 import plotly.express as px
+import requests
+import streamlit as st
 
 st.set_page_config(
     page_title="Character Embeddings",
@@ -32,7 +32,7 @@ if st.button("Submit"):
 
     headers = {
         "content-type": "application/json",
-        "X-RapidAPI-Key": st.secrets["RAPID_API_KEY"],
+        "X-RapidAPI-Key": st.secrets["RAPID_API_KEY"],  # Enter your RAPID API Key here
         "X-RapidAPI-Host": "name-gender1.p.rapidapi.com",
     }
 
